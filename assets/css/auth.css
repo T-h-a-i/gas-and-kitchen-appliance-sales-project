@@ -1,0 +1,161 @@
+/* ================= TRANG ĐĂNG NHẬP / ĐĂNG KÝ ================= */
+.auth-wrapper {
+    display: flex;
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 4px 25px rgba(0,0,0,0.06);
+    border: 1px solid #eeeeee;
+    margin: 50px auto;
+    max-width: 1000px;
+    overflow: hidden; 
+}
+
+.auth-box {
+    flex: 1;
+    padding: 50px 40px;
+}
+
+.auth-box h2 {
+    color: #d81b60;
+    margin-bottom: 30px;
+    font-size: 1.8rem;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.auth-divider {
+    width: 1px;
+    background-color: #eeeeee;
+    margin: 40px 0; 
+}
+
+.auth-btn {
+    width: 100%;
+    padding: 14px;
+    font-size: 1.1rem;
+    margin-top: 10px;
+    text-transform: uppercase;
+}
+
+.form-options {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 25px;
+    font-size: 0.95rem;
+}
+
+.remember-me {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    cursor: pointer;
+    color: #333333;
+}
+
+.forgot-pwd {
+    color: #d81b60;
+    font-weight: 600;
+    transition: text-decoration 0.3s;
+}
+
+.forgot-pwd:hover {
+    text-decoration: underline;
+}
+
+.social-login {
+    margin-top: 35px;
+    text-align: center;
+    border-top: 1px dashed #eeeeee;
+    padding-top: 25px;
+}
+
+.social-login p {
+    color: #666666;
+    margin-bottom: 20px;
+    font-size: 0.95rem;
+}
+
+.social-btns {
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+}
+
+.btn-social {
+    padding: 12px;
+    border: 1px solid #eeeeee;
+    background-color: #ffffff;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: 600;
+    color: #333333;
+    transition: all 0.3s ease;
+    flex: 1;
+}
+
+.btn-social img {
+    width: 24px;   
+    height: 24px;
+    object-fit: contain; 
+}
+
+.btn-social:hover {
+    background-color: #fdf2f6;
+    border-color: #d81b60;
+    color: #d81b60;
+    transform: translateY(-2px);
+}
+
+.register-benefits {
+    margin-top: 35px;
+    background-color: #fdf2f6;
+    padding: 25px;
+    border-radius: 8px;
+    border: 1px solid #f8d7e3; 
+}
+
+.register-benefits h3 {
+    font-size: 1.1rem;
+    color: #333333;
+    margin-bottom: 15px;
+}
+
+.register-benefits ul {
+    list-style: none;
+}
+
+.register-benefits li {
+    position: relative;
+    padding-left: 25px;
+    margin-bottom: 12px;
+    color: #666666;
+    font-size: 0.95rem;
+    line-height: 1.5;
+}
+
+.register-benefits li::before {
+    content: '✓';
+    color: #d81b60;
+    position: absolute;
+    left: 0;
+    font-weight: bold;
+    font-size: 1.1rem;
+}
+
+@media (max-width: 992px) {
+    .auth-wrapper {
+        flex-direction: column;
+    }
+    
+    .auth-divider {
+        width: 100%;
+        height: 1px;
+        margin: 0;
+    }
+    
+    .auth-box {
+        padding: 40px 20px;
+    }
+}
