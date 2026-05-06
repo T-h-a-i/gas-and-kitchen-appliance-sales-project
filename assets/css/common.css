@@ -144,6 +144,21 @@ li {
 }
 
 /* ================= HEADER ACTIONS (GIỎ HÀNG) ================= */
+.header-actions {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+}
+
+.login-btn {
+    font-weight: 600;
+    transition: color 0.3s;
+}
+
+.login-btn:hover {
+    color: #d81b60;
+}
+
 .cart-btn {
     background-color: #ffffff;
     color: #d81b60;
@@ -171,9 +186,13 @@ li {
     color: #ffffff;
 }
 
-.cart-btn:hover .cart-count {
+.cart-btn:hover .cart-count {       /*chỉ cần di chuột vào cart-btn thì cart-count tự đổi màu theo*/
     background-color: #ffffff;
     color: #d81b60;
+}
+
+.mobile-only-action {
+    display: none;
 }
 
 .menu-toggle-checkbox {
@@ -369,6 +388,11 @@ li {
 
     .header-actions {
         display: none; 
+    }
+
+    .mobile-only-action {
+        display: block;
+        gap: 10px;
     }
 
     .main-nav {
