@@ -59,6 +59,10 @@
     margin-top: 10px;
 }
 
+.section-title {
+    margin-top: 30px;
+}
+
 @media (max-width: 768px) {
     .contact-wrapper {
         padding: 20px;

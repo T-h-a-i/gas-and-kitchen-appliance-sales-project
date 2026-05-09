@@ -121,13 +121,13 @@
 }
 
 .product-description ul {
-    list-style-type: disc;
     margin-left: 20px;
     color: #666666;
 }
 
 .product-description ul li {
     margin-bottom: 8px;
+    list-style-type: disc;
 }
 
 .purchase-actions {

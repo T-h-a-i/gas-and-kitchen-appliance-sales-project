@@ -15,7 +15,7 @@
     border-radius: 10px;
     box-shadow: 0 4px 15px rgba(0,0,0,0.03);
     border: 1px solid #eeeeee;
-    overflow-x: auto; 
+    overflow-x: auto;                           /*Cho phép cuộn ngang nếu nội dung vượt quá chiều rộng*/
 }
 
 .cart-table {
@@ -34,7 +34,7 @@
 .cart-table td {
     padding: 15px;
     border-bottom: 1px solid #eeeeee;
-    vertical-align: middle;
+    vertical-align: middle;                     /*Căn giữa theo chiều dọc*/
 }
 
 .cart-product-info {
@@ -133,6 +133,10 @@
     font-size: 1.1rem;
     margin-top: 20px;
     text-transform: uppercase;
+}
+
+.section-title {
+    margin-top: 30px;
 }
 
 @media (max-width: 992px) {

@@ -324,7 +324,7 @@ li {
 
 .newsletter-form {
     display: flex;
-    margin-top: 15px;
+    margin-top: 15px;              /*nếu xác định form luôn nằm dưới h3 thì không cần dòng này*/
 }
 
 .newsletter-form input {
