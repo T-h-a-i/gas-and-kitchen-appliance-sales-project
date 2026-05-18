@@ -1,5 +1,5 @@
 /* ================= TRANG ĐĂNG NHẬP / ĐĂNG KÝ ================= */
-.auth-wrapper {
+.account-wrap {
     display: flex;
     background-color: #ffffff;
     border-radius: 12px;
@@ -10,12 +10,12 @@
     overflow: hidden; 
 }
 
-.auth-box {
+.account-box {
     flex: 1;
     padding: 50px 40px;
 }
 
-.auth-box h2 {
+.account-box h2 {
     color: #d81b60;
     margin-bottom: 30px;
     font-size: 1.8rem;
@@ -24,13 +24,13 @@
     letter-spacing: 1px;
 }
 
-.auth-divider {
+.account-divider {
     width: 1px;
     background-color: #eeeeee;
     margin: 40px 0; 
 }
 
-.auth-btn {
+.account-btn {
     width: 100%;
     padding: 14px;
     font-size: 1.1rem;
@@ -145,17 +145,17 @@
 }
 
 @media (max-width: 992px) {
-    .auth-wrapper {
+    .account-wrap {
         flex-direction: column;
     }
     
-    .auth-divider {
+    .account-divider {
         width: 100%;
         height: 1px;
         margin: 0;
     }
     
-    .auth-box {
+    .account-box {
         padding: 40px 20px;
     }
 }

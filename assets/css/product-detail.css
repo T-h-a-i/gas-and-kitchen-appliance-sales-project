@@ -1,5 +1,5 @@
 /* ================= TRANG CHI TIẾT SẢN PHẨM ================= */
-.breadcrumb {
+.mini-nav {
     display: flex;
     gap: 10px;
     margin: 20px 0 30px;
@@ -7,16 +7,16 @@
     color: #666666;
 }
 
-.breadcrumb li::after {
+.mini-nav li::after {
     content: "/";
     margin-left: 10px;
 }
 
-.breadcrumb li:last-child::after {
+.mini-nav li:last-child::after {
     content: "";
 }
 
-.breadcrumb li:last-child {
+.mini-nav li:last-child {
     color: #d81b60;
     font-weight: 600;
 }
