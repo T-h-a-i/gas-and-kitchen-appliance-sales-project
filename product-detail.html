@@ -3,131 +3,91 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Trung Hiếu Gas | Gas - Bếp - Uy tín & An toàn cho mọi nhà</title>
-    <!-- Liên kết đến file CSS -->
+    <title>Trung Hiếu Gas | Chi Tiết Sản Phẩm</title>
     <link rel="stylesheet" href="assets/css/common.css">
     <link rel="stylesheet" href="assets/css/product-detail.css"> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
 
-    <!-- ================= HEADER ================= -->
+    <div class="top-bar">
+        <div class="container top-bar-container">
+            <div class="top-bar-left">
+                <span>📍 Số 197, Đường Trần Quang Khải, Phường Nam Định, Tỉnh Ninh Bình</span>
+                <span class="divider">|</span>
+                <span>📞 Hotline: 0919 019 791</span>
+            </div>
+            <div class="top-bar-right">
+                <a href="login.html" class="top-bar-login-btn"><i class="fas fa-user"></i> Đăng nhập / Đăng ký</a>
+            </div>
+        </div>
+    </div>
+
     <header class="main-header">
         <div class="container header-container">
             
-            <!-- Logo & Brand Name: Trung Hiếu Gas -->
-            <a href="index.html" class="brand-wrapper">
-                <img src="assets/images/logo.png" alt="Logo Trung Hiếu Gas" class="brand-logo-img">
-                <div class="brand-text">
-                    <strong class="brand-name">TRUNG HIẾU GAS</strong>
-                    <span class="brand-slogan">Gas - Bếp - Uy tín & An toàn cho mọi nhà</span>
-                </div>
-            </a>
+            <div class="header-left">
+                <a href="index.html" class="brand-wrapper">
+                    <img src="assets/images/logo.png" alt="Logo Trung Hiếu Gas" class="brand-logo-img">
+                    <div class="brand-text">
+                        <strong class="brand-name">TRUNG HIẾU GAS</strong>
+                    </div>
+                </a>
+            </div>
 
-            <!-- Checkbox Hack cho Mobile Menu (Không dùng JS) -->
             <input type="checkbox" id="mobile-menu-toggle" class="menu-toggle-checkbox">
             <label for="mobile-menu-toggle" class="mobile-btn">
-                <span></span>
-                <span></span>
-                <span></span>
+                <span></span><span></span><span></span>
             </label>
 
-            <!-- Navigation Menu -->
-            <nav class="main-nav">
+            <nav class="main-nav header-center">
                 <ul class="nav-list">
-                    <li><a href="index.html">Trang chủ</a></li>
-                    <!-- Dropdown CSS -->
+                    <li><a href="index.html">TRANG CHỦ</a></li>
                     <li class="has-dropdown">
-                        <a href="products.html">Sản phẩm ▾</a>
+                        <a href="products.html">SẢN PHẨM ▾</a>
                         <ul class="dropdown-menu">
                             <li><a href="products.html#gas">Sản phẩm Gas</a></li>
                             <li><a href="products.html#glass-stove">Bếp gas âm</a></li>
                             <li><a href="products.html#range-hood">Máy hút mùi</a></li>
                         </ul>
                     </li>
-                    <li><a href="news.html">Tin tức</a></li>
-                    <li><a href="recruitment.html">Tuyển dụng</a></li>
-                    <li><a href="contact.html">Liên hệ</a></li>
-                    <!--Thêm đăng nhập và giỏ hàng vào menu mobile-->
-                    <li class="mobile-only-action"><a href="login.html">Đăng Nhập</a></li>
-                    <li class="mobile-only-action"><a href="cart.html">Giỏ hàng <span class="cart-count">0</span></a></li>
+                    <li><a href="news.html">TIN TỨC</a></li>
+                    <li><a href="recruitment.html">TUYỂN DỤNG</a></li>
+                    <li><a href="contact.html">LIÊN HỆ</a></li>
+                    <li class="mobile-only-action">
+                        <a href="cart.html">
+                            <i class="fas fa-shopping-cart"></i> GIỎ HÀNG <span class="cart-count">0</span>
+                        </a>
+                    </li>
+                    <li class="mobile-only-action mobile-auth-action">
+                        <a href="login.html"><i class="fas fa-user"></i> ĐĂNG NHẬP / ĐĂNG KÝ</a>
+                    </li>
                 </ul>
             </nav>
 
-            <!-- Giỏ hàng -->
-            <div class="header-actions">
-                <a href="login.html" class="login-btn">
-                    Đăng nhập
-                </a>
+            <div class="header-actions header-right">
 
-                <a href="cart.html" class="cart-btn">
-                    Giỏ hàng <span class="cart-count">0</span>
-                </a>
+                <a href="cart.html" class="icon-btn cart-icon-btn" title="Giỏ hàng"><i class="fas fa-shopping-cart"></i><span class="cart-count">0</span></a>
+                <a href="contact.html" class="call-now-btn"><i class="fas fa-phone-alt"></i><span>GỌI NGAY</span></a>
             </div>
             
         </div>
     </header>
 
-    <!-- ================= MAIN CONTENT: CHI TIẾT SẢN PHẨM ================= -->
     <main class="main-content">
         <div class="container">
             
-            <!-- Mini Navigation (Điều hướng) -->
             <ul class="mini-nav">
                 <li><a href="index.html">Trang chủ</a></li>
-                <li><a href="products.html">Sản phẩm Gas</a></li>
-                <li>Bình Gas Petrolimex 12kg</li>
+                <li><a href="products.html">Sản phẩm</a></li>
+                <li>Tên sản phẩm</li>
             </ul>
 
-            <div class="product-detail-wrapper">
-                
-                <!-- Cột Trái: Hình ảnh sản phẩm (Khớp với trường HinhAnh) -->
-                <div class="product-gallery">
-                    <div class="main-image-box">
-                        <!-- Trường PhanTramGiam: Hiển thị badge giảm giá nếu có -->
-                        <span class="discount-badge">-10%</span>
-                        <!-- Trường HinhAnh -->
-                        <img src="assets/images/gas-petrolimex-12kg-van-ngang.png" alt="Hình ảnh sản phẩm chi tiết" id="mainImage">
-                    </div>
-                </div>
-
-                <!-- Cột Phải: Thông tin sản phẩm -->
-                <div class="product-info">
-                    <!-- Trường TenSP -->
-                    <h1 class="detail-name">Bình Gas Petrolimex 12kg van ngang</h1>
-                    
-                    <div class="price-section">
-                        <!-- Trường GiaMoi (Giá bán thực tế) -->
-                        <span class="detail-new-price">380.000 đ</span>
-                        <!-- Trường GiaCu (Giá gốc, bị gạch ngang) -->
-                        <span class="detail-old-price">420.000 đ</span>
-                    </div>
-
-                    <div class="product-description">
-                        <h3>Mô tả sản phẩm:</h3>
-                        <p>Bình gas chính hãng, đảm bảo an toàn tuyệt đối. Trọng lượng ruột 12kg, phù hợp cho nhu cầu đun nấu của gia đình. Sản phẩm đã được kiểm định chất lượng nghiêm ngặt.</p>
-                        <ul>
-                            <li><strong>Thương hiệu:</strong> Petrolimex</li>
-                            <li><strong>Trọng lượng:</strong> 12kg</li>
-                            <li><strong>Bảo hiểm:</strong> Có bảo hiểm an toàn cháy nổ</li>
-                        </ul>
-                    </div>
-
-                    <!-- Khu vực thao tác đặt hàng -->
-                    <div class="purchase-actions">
-                        <div class="quantity-selector">
-                            <label for="qty">Số lượng:</label>
-                            <input type="number" id="qty" value="1" min="1" max="50">
-                        </div>
-                        <button class="btn-primary btn-large">Thêm vào giỏ hàng</button>
-                    </div>
-
-                </div>
-            </div>
+            <div class="product-detail-wrapper" id="product-detail-wrapper"></div>
 
         </div>
     </main>
 
-    <!-- ================= FOOTER ================= -->
     <footer class="main-footer">
         <div class="container footer-container">
             <div class="footer-col">
@@ -155,5 +115,8 @@
         </div>
     </footer>
 
+    <script src="assets/js/cart.js"></script>
+    <script src="assets/js/products.js"></script>
+    <script src="assets/js/common.js"></script>
 </body>
 </html>

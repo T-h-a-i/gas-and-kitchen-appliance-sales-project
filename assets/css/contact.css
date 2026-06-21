@@ -1,68 +1,72 @@
-/* ================= TRANG LIÊN HỆ (CONTACT) ================= */
+﻿/* ================= TRANG LIÊN HỆ (CONTACT) ================= */
 .contact-wrapper {
     display: flex;
     flex-wrap: wrap;
     gap: 40px;
-    margin-bottom: 60px;
+    margin-bottom: 80px;
     background-color: #ffffff;
     padding: 40px;
     border-radius: 12px;
-    box-shadow: 0 4px 15px rgba(0,0,0,0.03);
+    box-shadow: 0 4px 20px rgba(0,0,0,0.04);
     border: 1px solid #eeeeee;
 }
-
 .contact-info-col {
     flex: 1;
     min-width: 300px;
     padding-right: 20px;
 }
-
 .contact-info-col h3 {
     font-size: 1.8rem;
     color: #d81b60;
     margin-bottom: 15px;
 }
-
 .contact-desc {
     color: #666666;
-    margin-bottom: 25px;
+    margin-bottom: 30px;
     line-height: 1.6;
 }
-
+.contact-list {
+    list-style: none;
+}
 .contact-list li {
-    margin-bottom: 20px;
+    margin-bottom: 25px;
     display: flex;
     align-items: flex-start;
     gap: 15px;
     font-size: 1.05rem;
+    color: #333333;
 }
-
 .contact-icon {
     font-size: 1.5rem;
+    color: #d81b60;
+    background-color: #fdf2f6;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    flex-shrink: 0;
 }
-
 .contact-form-col {
     flex: 1;
     min-width: 300px;
-    background-color: #fdf2f6; 
-    padding: 30px;
-    border-radius: 8px;
+    background-color: #fdf2f6;
+    padding: 40px;
+    border-radius: 10px;
 }
-
 .contact-form-col h3 {
-    margin-bottom: 20px;
+    margin-bottom: 25px;
     color: #333333;
+    font-size: 1.4rem;
 }
-
 .contact-form .btn-primary {
     width: 100%;
     margin-top: 10px;
+    padding: 14px;
 }
 
-.section-title {
-    margin-top: 30px;
-}
-
+/* Responsive */
 @media (max-width: 768px) {
     .contact-wrapper {
         padding: 20px;
@@ -70,5 +74,8 @@
     }
     .contact-info-col {
         padding-right: 0;
+    }
+    .contact-form-col {
+        padding: 25px 20px;
     }
 }

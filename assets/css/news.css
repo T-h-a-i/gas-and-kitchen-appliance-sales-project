@@ -1,11 +1,10 @@
-/* ================= TRANG TIN TỨC (NEWS) ================= */
+﻿/* ================= LƯỚI TIN TỨC ================= */
 .news-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));          /*auto-fill: nếu thiết cột thì chèn cột rỗng - các cột có nd ko bị phình ra*/
+    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
     gap: 30px;
     margin-bottom: 60px;
 }
-
 .news-card {
     background-color: #ffffff;
     border: 1px solid #eeeeee;
@@ -15,39 +14,33 @@
     display: flex;
     flex-direction: column;
 }
-
 .news-card:hover {
     transform: translateY(-5px);
     box-shadow: 0 10px 20px rgba(0,0,0,0.05);
 }
-
 .news-img-link {
     display: block;
     height: 200px;
-    background-color: #fdf2f6;
+    background-color: #fcfcfc;
     overflow: hidden;
 }
-
 .news-img-link img {
     width: 100%;
     height: 100%;
-    object-fit: cover;            /*Giữ tỉ lệ ảnh và cắt nếu cần*/
+    object-fit: cover;
 }
-
 .news-content {
     padding: 20px;
     display: flex;
     flex-direction: column;
-    flex-grow: 1;                   /* Giúp phần nội dung chiếm hết chiều cao còn lại của card */
+    flex-grow: 1;
 }
-
 .news-date {
     font-size: 0.85rem;
     color: #666666;
     margin-bottom: 10px;
-    display: block;             /*Đảm bảo nó hiển thị như một khối (span mang tính chất inline -> block mới áp dụng được margin, padding)*/
+    display: block;
 }
-
 .news-title {
     font-size: 1.2rem;
     color: #333333;
@@ -55,21 +48,18 @@
     margin-bottom: 12px;
     transition: color 0.2s;
 }
-
 .news-title:hover {
     color: #d81b60;
 }
-
 .news-excerpt {
     font-size: 0.95rem;
     color: #666666;
     margin-bottom: 20px;
     line-height: 1.5;
-    height: 4.5em; 
+    height: 4.5em;
     overflow: hidden;
     flex-grow: 1;
 }
-
 .news-readmore {
     font-weight: bold;
     color: #d81b60;
@@ -78,11 +68,6 @@
     gap: 5px;
     transition: gap 0.2s;
 }
-
 .news-readmore:hover {
-    gap: 10px; 
-}
-
-.section-title {
-    margin-top: 30px;
+    gap: 10px;
 }

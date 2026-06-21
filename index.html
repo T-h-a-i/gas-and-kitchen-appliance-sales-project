@@ -4,73 +4,77 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Trung Hiếu Gas | Gas - Bếp - Uy tín & An toàn cho mọi nhà</title>
-    <!-- Liên kết đến file CSS -->
     <link rel="stylesheet" href="assets/css/common.css">
     <link rel="stylesheet" href="assets/css/home.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
 
-    <!-- ================= HEADER ================= -->
+    <div class="top-bar">
+        <div class="container top-bar-container">
+            <div class="top-bar-left">
+                <span>📍 Số 197, Đường Trần Quang Khải, Phường Nam Định, Tỉnh Ninh Bình</span>
+                <span class="divider">|</span>
+                <span>📞 Hotline: 0919 019 791</span>
+            </div>
+            <div class="top-bar-right">
+                <a href="login.html" class="top-bar-login-btn"><i class="fas fa-user"></i> Đăng nhập / Đăng ký</a>
+            </div>
+        </div>
+    </div>
+
     <header class="main-header">
         <div class="container header-container">
             
-            <!-- Logo & Brand Name: Trung Hiếu Gas -->
-            <a href="index.html" class="brand-wrapper">
-                <img src="assets/images/logo.png" alt="Logo Trung Hiếu Gas" class="brand-logo-img">
-                <div class="brand-text">
-                    <strong class="brand-name">TRUNG HIẾU GAS</strong>
-                    <span class="brand-slogan">Gas - Bếp - Uy tín & An toàn cho mọi nhà</span>
-                </div>
-            </a>
+            <div class="header-left">
+                <a href="index.html" class="brand-wrapper">
+                    <img src="assets/images/logo.png" alt="Logo Trung Hiếu Gas" class="brand-logo-img">
+                    <div class="brand-text">
+                        <strong class="brand-name">TRUNG HIẾU GAS</strong>
+                    </div>
+                </a>
+            </div>
 
-            <!-- Checkbox Hack cho Mobile Menu -->
             <input type="checkbox" id="mobile-menu-toggle" class="menu-toggle-checkbox">
             <label for="mobile-menu-toggle" class="mobile-btn">
-                <span></span>
-                <span></span>
-                <span></span>
+                <span></span><span></span><span></span>
             </label>
 
-            <!-- Navigation Menu -->
-            <nav class="main-nav">
+            <nav class="main-nav header-center">
                 <ul class="nav-list">
-                    <li><a href="index.html">Trang chủ</a></li>
-                    <!-- Dropdown CSS -->
+                    <li><a href="index.html">TRANG CHỦ</a></li>
                     <li class="has-dropdown">
-                        <a href="products.html">Sản phẩm ▾</a>
+                        <a href="products.html">SẢN PHẨM ▾</a>
                         <ul class="dropdown-menu">
                             <li><a href="products.html#gas">Sản phẩm Gas</a></li>
                             <li><a href="products.html#glass-stove">Bếp gas âm</a></li>
                             <li><a href="products.html#range-hood">Máy hút mùi</a></li>
                         </ul>
                     </li>
-                    <li><a href="news.html">Tin tức</a></li>
-                    <li><a href="recruitment.html">Tuyển dụng</a></li>
-                    <li><a href="contact.html">Liên hệ</a></li>
-                    <!--Thêm đăng nhập và giỏ hàng vào menu mobile-->
-                    <li class="mobile-only-action"><a href="login.html">Đăng Nhập</a></li>
-                    <li class="mobile-only-action"><a href="cart.html">Giỏ hàng <span class="cart-count">0</span></a></li>
+                    <li><a href="news.html">TIN TỨC</a></li>
+                    <li><a href="recruitment.html">TUYỂN DỤNG</a></li>
+                    <li><a href="contact.html">LIÊN HỆ</a></li>
+                    <li class="mobile-only-action">
+                        <a href="cart.html">
+                            <i class="fas fa-shopping-cart"></i> GIỎ HÀNG <span class="cart-count">0</span>
+                        </a>
+                    </li>
+                    <li class="mobile-only-action mobile-auth-action">
+                        <a href="login.html"><i class="fas fa-user"></i> ĐĂNG NHẬP / ĐĂNG KÝ</a>
+                    </li>
                 </ul>
             </nav>
 
-            <!-- Giỏ hàng -->
-            <div class="header-actions">
-                <a href="login.html" class="login-btn">
-                    Đăng nhập
-                </a>
+            <div class="header-actions header-right">
 
-                <a href="cart.html" class="cart-btn">
-                    Giỏ hàng <span class="cart-count">0</span>
-                </a>
+                <a href="cart.html" class="icon-btn cart-icon-btn" title="Giỏ hàng"><i class="fas fa-shopping-cart"></i><span class="cart-count">0</span></a>
+                <a href="contact.html" class="call-now-btn"><i class="fas fa-phone-alt"></i><span>GỌI NGAY</span></a>
             </div>
             
         </div>
     </header>
 
-    <!-- ================= MAIN CONTENT ================= -->
     <main class="main-content">
-        
-        <!-- 1. HERO BANNER SECTION -->
         <section class="main-banner">
             <div class="container banner-wrap">
                 <div class="banner-text">
@@ -84,13 +88,10 @@
             </div>
         </section>
 
-        <!-- 2. DANH MỤC SẢN PHẨM (CATEGORIES GRID) -->
         <section class="categories-section">
             <div class="container">
                 <h2 class="section-title">Danh Mục Nổi Bật</h2>
                 <div class="categories-grid">
-                    
-                    <!-- Category 1 -->
                     <a href="products.html#gas" class="category-card">
                         <div class="cat-img">
                             <img src="assets/images/gas.png" alt="Sản phẩm gas" class="real-img">
@@ -98,7 +99,6 @@
                         <h3>Sản phẩm Gas</h3>
                     </a>
 
-                    <!-- Category 2 -->
                     <a href="products.html#glass-stove" class="category-card">
                         <div class="cat-img">
                             <img src="assets/images/bep.png" alt="Sản phẩm bếp" class="real-img">
@@ -106,21 +106,17 @@
                         <h3>Bếp Gas Âm</h3>
                     </a>
 
-                    <!-- Category 3 -->
                     <a href="products.html#range-hood" class="category-card">
                         <div class="cat-img">
                             <img src="assets/images/hut-mui.png" alt="Sản phẩm hút mùi" class="real-img">
                         </div>
                         <h3>Máy Hút Mùi</h3>
                     </a>
-
                 </div>
             </div>
         </section>
-
     </main>
 
-    <!-- ================= FOOTER ================= -->
     <footer class="main-footer">
         <div class="container footer-container">
             <div class="footer-col">
@@ -148,5 +144,8 @@
         </div>
     </footer>
 
+    <script src="assets/js/cart.js"></script>
+    <script src="assets/js/products.js"></script>
+    <script src="assets/js/common.js"></script>
 </body>
 </html>

@@ -1,273 +1,171 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="vi">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Trung Hiếu Gas | Gas - Bếp - Uy tín & An toàn cho mọi nhà</title>
-    <!-- Liên kết đến file CSS -->
+    <title>Sản Phẩm | Trung Hiếu Gas</title>
     <link rel="stylesheet" href="assets/css/common.css">
     <link rel="stylesheet" href="assets/css/products.css"> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
 
-    <!-- ================= HEADER ================= -->
+    <div class="top-bar">
+        <div class="container top-bar-container">
+            <div class="top-bar-left">
+                <span>📍 Số 197, Đường Trần Quang Khải, Phường Nam Định, Tỉnh Ninh Bình</span>
+                <span class="divider">|</span>
+                <span>📞 Hotline: 0919 019 791</span>
+            </div>
+            <div class="top-bar-right">
+                <a href="login.html" class="top-bar-login-btn"><i class="fas fa-user"></i> Đăng nhập / Đăng ký</a>
+            </div>
+        </div>
+    </div>
+
     <header class="main-header">
         <div class="container header-container">
-            
-            <!-- Logo & Brand Name: Trung Hiếu Gas -->
-            <a href="index.html" class="brand-wrapper">
-                <img src="assets/images/logo.png" alt="Logo Trung Hiếu Gas" class="brand-logo-img">
-                <div class="brand-text">
-                    <strong class="brand-name">TRUNG HIẾU GAS</strong>
-                    <span class="brand-slogan">Gas - Bếp - Uy tín & An toàn cho mọi nhà</span>
-                </div>
-            </a>
+            <div class="header-left">
+                <a href="index.html" class="brand-wrapper">
+                    <img src="assets/images/logo.png" alt="Logo Trung Hiếu Gas" class="brand-logo-img">
+                    <div class="brand-text">
+                        <strong class="brand-name">TRUNG HIẾU GAS</strong>
+                    </div>
+                </a>
+            </div>
 
-            <!-- Checkbox Hack cho Mobile Menu (Không dùng JS) -->
             <input type="checkbox" id="mobile-menu-toggle" class="menu-toggle-checkbox">
             <label for="mobile-menu-toggle" class="mobile-btn">
-                <span></span>
-                <span></span>
-                <span></span>
+                <span></span><span></span><span></span>
             </label>
 
-            <!-- Navigation Menu -->
-            <nav class="main-nav">
+            <nav class="main-nav header-center">
                 <ul class="nav-list">
-                    <li><a href="index.html">Trang chủ</a></li>
-                    <!-- Dropdown CSS -->
+                    <li><a href="index.html">TRANG CHỦ</a></li>
                     <li class="has-dropdown">
-                        <a href="products.html">Sản phẩm ▾</a>
+                        <a href="products.html">SẢN PHẨM ▾</a>
                         <ul class="dropdown-menu">
                             <li><a href="products.html#gas">Sản phẩm Gas</a></li>
                             <li><a href="products.html#glass-stove">Bếp gas âm</a></li>
                             <li><a href="products.html#range-hood">Máy hút mùi</a></li>
                         </ul>
                     </li>
-                    <li><a href="news.html">Tin tức</a></li>
-                    <li><a href="recruitment.html">Tuyển dụng</a></li>
-                    <li><a href="contact.html">Liên hệ</a></li>
-                    <!--Thêm đăng nhập và giỏ hàng vào menu mobile-->
-                    <li class="mobile-only-action"><a href="login.html">Đăng Nhập</a></li>
-                    <li class="mobile-only-action"><a href="cart.html">Giỏ hàng <span class="cart-count">0</span></a></li>
+                    <li><a href="news.html">TIN TỨC</a></li>
+                    <li><a href="recruitment.html">TUYỂN DỤNG</a></li>
+                    <li><a href="contact.html">LIÊN HỆ</a></li>
+                    <li class="mobile-only-action">
+                        <a href="cart.html">
+                            <i class="fas fa-shopping-cart"></i> GIỎ HÀNG <span class="cart-count">0</span>
+                        </a>
+                    </li>
+                    <li class="mobile-only-action mobile-auth-action">
+                        <a href="login.html"><i class="fas fa-user"></i> ĐĂNG NHẬP / ĐĂNG KÝ</a>
+                    </li>
                 </ul>
             </nav>
 
-            <!-- Giỏ hàng -->
-            <div class="header-actions">
-                <a href="login.html" class="login-btn">
-                    Đăng nhập
-                </a>
+            <div class="header-actions header-right">
 
-                <a href="cart.html" class="cart-btn">
-                    Giỏ hàng <span class="cart-count">0</span>
-                </a>
+                <a href="cart.html" class="icon-btn cart-icon-btn" title="Giỏ hàng"><i class="fas fa-shopping-cart"></i><span class="cart-count">0</span></a>
+                <a href="contact.html" class="call-now-btn"><i class="fas fa-phone-alt"></i><span>GỌI NGAY</span></a>
             </div>
-            
         </div>
     </header>
 
-    <!-- ================= MAIN CONTENT: DANH SÁCH SẢN PHẨM ================= -->
     <main class="main-content">
+        
         <div class="container">
-            
-            <!-- ====== DANH MỤC 1: SẢN PHẨM GAS ====== -->
-            <section id="gas" class="product-category-section">
-                <h2 class="category-title">Sản phẩm Gas</h2>
-                <div class="product-grid">
+            <ul class="mini-nav">
+                <li><a href="index.html">Trang chủ</a></li>
+                <li>Tất cả sản phẩm</li>
+            </ul>
+        </div>
+
+        <div class="full-width-banner">
+            <div class="container">
+                <h2>Tất Cả <span class="highlight-pink">Sản Phẩm</span></h2>
+                <p>6 sản phẩm chính hãng — Gas bình, Bếp gas âm kính, Máy hút mùi</p>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="prod-layout-wrap">
+                
+                <aside class="sidebar-filter">
                     
-                    <!-- Sản phẩm 1 -->
-                    <div class="product-card">
-                        <img src="assets/images/gas-petrolimex-12kg-van-ngang.png" alt="Bình Gas Petrolimex 12kg" class="product-img">
-                        <h3 class="product-name">Bình Gas Petrolimex 12kg van ngang</h3>
-                        <p class="product-price">380.000 đ</p>
-                        <a href="product-detail.html" class="btn-add-cart">Xem chi tiết</a>
+                    <div class="filter-group">
+                        <h3 class="filter-title">DANH MỤC</h3>
                     </div>
 
-                    <!-- Sản phẩm 2 -->
-                    <div class="product-card">
-                        <img src="assets/images/gas-petrovietnam-12kg-hong.png" alt="Bình Petro Việt Nam 12kg Hồng" class="product-img">
-                        <h3 class="product-name">Bình Gas Petro Việt Nam 12kg (Màu Hồng)</h3>
-                        <p class="product-price">350.000 đ</p>
-                        <a href="product-detail.html" class="btn-add-cart">Xem chi tiết</a>
+                    <div class="filter-group">
+                        <h3 class="filter-title">THƯƠNG HIỆU</h3>
                     </div>
+
+                    <div class="filter-group">
+                        <h3 class="filter-title">KHOẢNG GIÁ</h3>
+                        <div class="price-labels">
+                            <span>200.000đ</span>
+                            <span class="price-max">Đến: 10.000.000đ</span>
+                        </div>
+                        <input type="range" min="200000" max="10000000" value="10000000" class="price-slider">
+                    </div>
+
+                    <div class="filter-group">
+                        <h3 class="filter-title">ĐÁNH GIÁ</h3>
+                        <label class="custom-checkbox">
+                            <input type="checkbox" class="rating-checkbox" value="5">
+                            <span class="checkmark"></span>
+                            <span class="stars">
+                                <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                            </span> (5 sao)
+                        </label>
+                        <label class="custom-checkbox">
+                            <input type="checkbox" class="rating-checkbox" value="4">
+                            <span class="checkmark"></span>
+                            <span class="stars">
+                                <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i>
+                            </span> 4 sao trở lên
+                        </label>
+                        <label class="custom-checkbox">
+                            <input type="checkbox" class="rating-checkbox" value="3">
+                            <span class="checkmark"></span>
+                            <span class="stars">
+                                <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i>
+                            </span> 3 sao trở lên
+                        </label>
+                    </div>
+
+                    <button type="button" class="btn-clear-filter">
+                        <i class="fas fa-undo"></i> Xóa tất cả bộ lọc
+                    </button>
+                </aside>
+
+                <div class="prod-main-content">
                     
-                    <div class="product-card">
-                        <img src="assets/images/gas-petrovietnam-12kg-do.png" alt="Bình Petro Việt Nam 12kg Đỏ" class="product-img">
-                        <h3 class="product-name">Bình Gas Petro Việt Nam 12kg (Màu Đỏ)</h3>
-                        <p class="product-price">350.000 đ</p>
-                        <a href="product-detail.html" class="btn-add-cart">Xem chi tiết</a>
+
+                    <div class="prod-toolbar">
+                        <div class="toolbar-left">
+                            <p></p>
+                        </div>
+                        <div class="toolbar-right">
+                            <select class="sort-dropdown">
+                                <option value="default">Mặc định</option>
+                                <option value="price-asc">Giá: Thấp đến Cao</option>
+                                <option value="price-desc">Giá: Cao đến Thấp</option>
+                            </select>
+                            <div class="view-toggle">
+                                <button class="view-btn active"><i class="fas fa-th-large"></i></button>
+                                <button class="view-btn"><i class="fas fa-bars"></i></button>
+                            </div>
+                        </div>
                     </div>
 
-                    <div class="product-card">
-                        <img src="assets/images/gas-petrovietnam-12kg-xam.png" alt="Bình Petro Việt Nam 12kg Xám" class="product-img">
-                        <h3 class="product-name">Bình Gas Petro Việt Nam 12kg (Màu Xám)</h3>
-                        <p class="product-price">350.000 đ</p>
-                        <a href="product-detail.html" class="btn-add-cart">Xem chi tiết</a>
-                    </div>
-
-                    <div class="product-card">
-                        <img src="assets/images/gas-cong-nghiep-petrovietnam-45kg-hong.png" alt="Bình Công Nghiêp Petro Việt Nam 45kg Hồng" class="product-img">
-                        <h3 class="product-name">Bình Gas Công Nghiệp Petro Việt Nam 45kg (Màu Hồng)</h3>
-                        <p class="product-price">350.000 đ</p>
-                        <a href="product-detail.html" class="btn-add-cart">Xem chi tiết</a>
-                    </div>
-
-                    <div class="product-card">
-                        <img src="assets/images/binh-gas-agas-12kg-do.png" alt="Bình AGAS Việt 12kg Đỏ" class="product-img">
-                        <h3 class="product-name">Bình Gas AGAS 12kg (Màu Đỏ)</h3>
-                        <p class="product-price">350.000 đ</p>
-                        <a href="product-detail.html" class="btn-add-cart">Xem chi tiết</a>
-                    </div>
-
-                    <div class="product-card">
-                        <img src="assets/images/gas-jp-12kg-xam.png" alt="Bình Gas JP 12kg Xám" class="product-img">
-                        <h3 class="product-name">Bình Gas JP 12kg (Màu Xám)</h3>
-                        <p class="product-price">350.000 đ</p>
-                        <a href="product-detail.html" class="btn-add-cart">Xem chi tiết</a>
-                    </div>
-
-                    <div class="product-card">
-                        <img src="assets/images/gas-total-12kg-xam.png" alt="Bình Gas Total 12kg Xám" class="product-img">
-                        <h3 class="product-name">Bình Gas Total 12kg (Màu Xám)</h3>
-                        <p class="product-price">350.000 đ</p>
-                        <a href="product-detail.html" class="btn-add-cart">Xem chi tiết</a>
-                    </div>
+                    <div class="product-grid" id="product-grid"></div>
                 </div>
-            </section>
-
-            <!-- ====== DANH MỤC 2: BẾP GAS ÂM ====== -->
-            <section id="glass-stove" class="product-category-section">
-                <h2 class="category-title">Bếp Gas Âm Chuyên Dụng</h2>
-                <div class="product-grid">
-                    
-                    <!-- Sản phẩm 1 -->
-                    <div class="product-card">
-                        <img src="assets/images/beo-am-kinh-sunhouse-shb62050.png" alt="Bếp gas âm Sunhouse" class="product-img">
-                        <h3 class="product-name">Bếp gas âm kính Sunhouse SHB62050</h3>
-                        <p class="product-price">1.250.000 đ</p>
-                        <a href="product-detail.html" class="btn-add-cart">Xem chi tiết</a>
-                    </div>
-
-                    <div class="product-card">
-                        <img src="assets/images/bep-gas-am-rinnai-rvb-2bg(f)n.png" alt="Bếp gas âm RINNAI RVB 2BG(F)N" class="product-img">
-                        <h3 class="product-name">Bếp gas âm RINNAI RVB 2BG(F)N</h3>
-                        <p class="product-price">1.250.000 đ</p>
-                        <a href="product-detail.html" class="btn-add-cart">Xem chi tiết</a>
-                    </div>
-
-                    <div class="product-card">
-                        <img src="assets/images/bep-gas-am-rinnai-rb-2cg(b).png" alt="Bếp gas âm RINNAI RB-2CG(B)" class="product-img">
-                        <h3 class="product-name">Bếp gas âm RINNAI RB-2CG(B)</h3>
-                        <p class="product-price">1.250.000 đ</p>
-                        <a href="product-detail.html" class="btn-add-cart">Xem chi tiết</a>
-                    </div>
-
-                    <div class="product-card">
-                        <img src="assets/images/Bếp Gas Âm Mặt Kính Cường Lực Nagakawa NAG1751.png" alt="Bếp Gas Âm Mặt Kính Cường Lực Nagakawa NAG1751" class="product-img">
-                        <h3 class="product-name">Bếp Gas Âm Mặt Kính Cường Lực Nagakawa NAG1751</h3>
-                        <p class="product-price">1.250.000 đ</p>
-                        <a href="product-detail.html" class="btn-add-cart">Xem chi tiết</a>
-                    </div>
-
-                    <div class="product-card">
-                        <img src="assets/images/Bếp gas âm 3 vùng nấu Faster FS-319S.png" alt="Bếp gas âm 3 vùng nấu Faster FS-319S" class="product-img">
-                        <h3 class="product-name">Bếp gas âm 3 vùng nấu Faster FS-319S</h3>
-                        <p class="product-price">1.250.000 đ</p>
-                        <a href="product-detail.html" class="btn-add-cart">Xem chi tiết</a>
-                    </div>
-
-                    <div class="product-card">
-                        <img src="assets/images/Bếp gas âm kính Sunhouse Apex APB8819.png" alt="Bếp gas âm kính Sunhouse Apex APB8819" class="product-img">
-                        <h3 class="product-name">Bếp gas âm kính Sunhouse Apex APB8819</h3>
-                        <p class="product-price">1.250.000 đ</p>
-                        <a href="product-detail.html" class="btn-add-cart">Xem chi tiết</a>
-                    </div>
-
-                    <div class="product-card">
-                        <img src="assets/images/BẾP GAS ÂM KÍNH KINGMASTER KM-828T.png" alt="BẾP GAS ÂM KÍNH KINGMASTER KM-828T" class="product-img">
-                        <h3 class="product-name">BẾP GAS ÂM KÍNH KINGMASTER KM-828T</h3>
-                        <p class="product-price">1.250.000 đ</p>
-                        <a href="product-detail.html" class="btn-add-cart">Xem chi tiết</a>
-                    </div>
-
-                    <div class="product-card">
-                        <img src="assets/images/Bếp gas âm kính Sunhouse SHB501MT.png" alt="Bếp gas âm kính Sunhouse SHB501MT" class="product-img">
-                        <h3 class="product-name">Bếp gas âm kính Sunhouse SHB501MT</h3>
-                        <p class="product-price">1.250.000 đ</p>
-                        <a href="product-detail.html" class="btn-add-cart">Xem chi tiết</a>
-                    </div>
-                </div>
-            </section>
-
-            <!-- ====== DANH MỤC 3: MÁY HÚT MÙI ====== -->
-            <section id="range-hood" class="product-category-section">
-                <h2 class="category-title">Máy Hút Mùi Khử Mùi</h2>
-                <div class="product-grid">
-                    
-                    <!-- Sản phẩm 1 -->
-                    <div class="product-card">
-                        <img src="assets/images/may-hut-mui-kinh-cong-kangaroo-kgch70h1c.png" alt="Máy hút mùi kính cong" class="product-img">
-                        <h3 class="product-name">Máy hút mùi kính cong Kangaroo KGCH70H1C</h3>
-                        <p class="product-price">2.450.000 đ</p>
-                        <a href="product-detail.html" class="btn-add-cart">Xem chi tiết</a>
-                    </div>
-
-                    <div class="product-card">
-                        <img src="assets/images/Máy hút mùi kính vát Panasonic FV-VX9ABBYUE.png" alt="Máy hút mùi kính vát Panasonic FV-VX9ABBYUE" class="product-img">
-                        <h3 class="product-name">Máy hút mùi kính vát Panasonic FV-VX9ABBYUE</h3>
-                        <p class="product-price">2.450.000 đ</p>
-                        <a href="product-detail.html" class="btn-add-cart">Xem chi tiết</a>
-                    </div>
-
-                    <div class="product-card">
-                        <img src="assets/images/Hút mùi SPELIER SP 109-SO.png" alt="Hút mùi SPELIER SP 109-SO" class="product-img">
-                        <h3 class="product-name">Hút mùi SPELIER SP 109-SO</h3>
-                        <p class="product-price">2.450.000 đ</p>
-                        <a href="product-detail.html" class="btn-add-cart">Xem chi tiết</a>
-                    </div>
-
-                    <div class="product-card">
-                        <img src="assets/images/Máy hút mùi âm tủ Hafele HH-TT70A 533.86.817.png" alt="Máy hút mùi âm tủ Hafele HH-TT70A 533.86.817" class="product-img">
-                        <h3 class="product-name">Máy hút mùi âm tủ Hafele HH-TT70A 533.86.817</h3>
-                        <p class="product-price">2.450.000 đ</p>
-                        <a href="product-detail.html" class="btn-add-cart">Xem chi tiết</a>
-                    </div>
-
-                    <div class="product-card">
-                        <img src="assets/images/Máy hút mùi chữ T Panasonic FV-TX9ADBYUE 90cm.png" alt="Máy hút mùi chữ T Panasonic FV-TX9ADBYUE 90cm" class="product-img">
-                        <h3 class="product-name">Máy hút mùi chữ T Panasonic FV-TX9ADBYUE 90cm</h3>
-                        <p class="product-price">2.450.000 đ</p>
-                        <a href="product-detail.html" class="btn-add-cart">Xem chi tiết</a>
-                    </div>
-
-                    <div class="product-card">
-                        <img src="assets/images/Máy hút mùi ống khói Bosch DWW07W850.png" alt="Máy hút mùi ống khói Bosch DWW07W850" class="product-img">
-                        <h3 class="product-name">Máy hút mùi ống khói Bosch DWW07W850</h3>
-                        <p class="product-price">2.450.000 đ</p>
-                        <a href="product-detail.html" class="btn-add-cart">Xem chi tiết</a>
-                    </div>
-
-                    <div class="product-card">
-                        <img src="assets/images/Máy Hút Mùi CANZY CZ-399 SMART.png" alt="Máy Hút Mùi CANZY CZ-399 SMART" class="product-img">
-                        <h3 class="product-name">Máy Hút Mùi CANZY CZ-399 SMART</h3>
-                        <p class="product-price">2.450.000 đ</p>
-                        <a href="product-detail.html" class="btn-add-cart">Xem chi tiết</a>
-                    </div>
-
-                    <div class="product-card">
-                        <img src="assets/images/Máy Hút Mùi Âm Tủ KAFF KF-TL1007B.png" alt="Máy Hút Mùi Âm Tủ KAFF KF-TL1007B" class="product-img">
-                        <h3 class="product-name">Máy Hút Mùi Âm Tủ KAFF KF-TL1007B</h3>
-                        <p class="product-price">2.450.000 đ</p>
-                        <a href="product-detail.html" class="btn-add-cart">Xem chi tiết</a>
-                    </div>
-                </div>
-            </section>
-
+            </div>
         </div>
     </main>
 
-    <!-- ================= FOOTER ================= -->
     <footer class="main-footer">
         <div class="container footer-container">
             <div class="footer-col">
@@ -294,6 +192,8 @@
             <p>&copy; 2026 Trung Hiếu Gas. Đã đăng ký bản quyền.</p>
         </div>
     </footer>
-
+    <script src="assets/js/cart.js"></script>
+    <script src="assets/js/products.js"></script>
+    <script src="assets/js/common.js"></script>
 </body>
 </html>
